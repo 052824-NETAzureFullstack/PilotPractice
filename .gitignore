@@ -1,3 +1,8 @@
+## ShoutOut .gitignore
+
+#Connection String
+/ADO.NET/DBUI/CS.txt
+
 # User-specific files
 *.rsuser
 *.suo
