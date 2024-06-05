@@ -26,7 +26,5 @@ export class QuestionDetailComponent {
   }
 
   public showAnswer() {
-    this.isCorrect = true;
   }
-
 }
