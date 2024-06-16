@@ -14,7 +14,7 @@
 
     <div class="right-side">
       <div class="answers">
-        <div class="pill" *ngFor="let answer of this.question?.answers" [ngClass]="(this.question?.answers!.indexOf(answer) == this.question?.correctAnswer)? 'correct' : 'incorrect'">
+        <div class="pill" *ngFor="let answer of this.question?.answers"[ngClass]="(this.question?.answers!.indexOf(answer) == this.question?.correctAnswer)? 'correct' : 'incorrect'" (click)="showAnswer()" [ngClass]="{'hide-answer': hideAnswer}" >
 
 <!-- use ? with a variable to allow it to possibly be undefined  -->
 <!-- use ! with a variable to ensure that the variable will be defined -->
@@ -33,7 +33,6 @@ ngClass - conditionally apply class for css from the properties of a ts object
           </div>
         </div>
       </div>
-      <button (click)="showAnswer()">Show Answer</button>
     </div>
 
   </div>
